@@ -22,10 +22,6 @@ export const EmployeeTable: React.FC<EmployeeTableProps> = ({ employees }) => {
               className="block w-full pl-10 pr-4 py-2.5 text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500"
             />
           </div>
-          <button className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-gray-700 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-            <Filter className="w-4 h-4" />
-            Filtros
-          </button>
         </div>
       </div>
 

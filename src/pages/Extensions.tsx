@@ -1,23 +1,45 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import { ExtensionTable } from '../components/extensions/ExtensionTable';
 import { extensions } from '../data/mockData';
 
 export const Extensions = () => {
+  const containerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between mb-8">
+    <motion.div
+      className="space-y-6"
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      transition={{ duration: 0.5 }}
+      variants={containerVariants}
+    >
+      {/* Título */}
+      <motion.div
+        className="flex items-center justify-between mb-8"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Ramais</h1>
-          <p className="text-gray-500">Gerencie os ramais da empresa</p>
+          <p className="text-gray-500">Ramais da empresa</p>
         </div>
-        <button className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors">
-          <Plus className="w-4 h-4" />
-          Novo Ramal
-        </button>
-      </div>
+      </motion.div>
 
-      <ExtensionTable extensions={extensions} />
-    </div>
+      {/* Tabela de Ramais */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
+        <ExtensionTable extensions={extensions} />
+      </motion.div>
+    </motion.div>
   );
 };

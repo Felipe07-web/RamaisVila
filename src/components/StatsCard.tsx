@@ -10,7 +10,7 @@ interface StatsCardProps {
 
 export const StatsCard: React.FC<StatsCardProps> = ({ title, value, icon: Icon, growth }) => {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-sm">
+    <div className="bg-white rounded-lg p-6 shadow-md border-2 border-gray-300">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-sm text-gray-500">{title}</p>

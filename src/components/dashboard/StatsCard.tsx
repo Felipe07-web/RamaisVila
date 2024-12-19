@@ -18,22 +18,22 @@ const variantStyles = {
     border: 'border-emerald-100'
   },
   blue: {
-    gradient: 'from-blue-500 to-blue-400',
-    background: 'bg-blue-50',
-    text: 'text-blue-600',
-    border: 'border-blue-100'
+    gradient: 'from-emerald-500 to-blue-400',
+    background: 'bg-emerald-50',
+    text: 'text-emerald-600',
+    border: 'border-emerald-100'
   },
   purple: {
-    gradient: 'from-purple-500 to-purple-400',
-    background: 'bg-purple-50',
-    text: 'text-purple-600',
-    border: 'border-purple-100'
+    gradient: 'from-emerald-500 to-purple-400',
+    background: 'bg-emerald-50',
+    text: 'text-emerald-600',
+    border: 'border-emerald-100'
   },
   orange: {
-    gradient: 'from-orange-500 to-orange-400',
-    background: 'bg-orange-50',
-    text: 'text-orange-600',
-    border: 'border-orange-100'
+    gradient: 'from-emerald-500 to-orange-400',
+    background: 'bg-emerald-50',
+    text: 'text-emerald-600',
+    border: 'border-emerald-100'
   }
 };
 
