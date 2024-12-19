@@ -9,7 +9,7 @@ export const Dashboard = () => {
   const shuffleVariants = {
     hidden: {
       opacity: 0,
-      scale: 0.5,
+      scale: 0.3,
       x: () => Math.random() * 300 - 150, // Posição inicial aleatória no eixo X
       y: () => Math.random() * 300 - 150, // Posição inicial aleatória no eixo Y
     },
